@@ -1,0 +1,19 @@
+.multimedia {
+    position: relative;
+    left: 250px;
+}
+
+.multimedia_merch {
+    position: static;
+    float: right;
+}
+
+.foot {
+    position: fixed;
+    top: 85%;
+}
+
+.navegador {
+    position: relative;
+    right: 20px;
+}

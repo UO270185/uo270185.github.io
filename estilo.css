@@ -1,0 +1,83 @@
+/*0001*/
+h1, h2, h3  { 
+    font-family: "Verdana", sans-serif;
+    font-weight: bold; 
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+}
+
+/*0001*/
+h1 {
+    padding: 20px 10px;
+    background-color: #6b0000;
+}
+
+/*0001*/
+h2 {
+    background-color: #b30000;
+    padding: 10px 10px;
+}
+
+/*0001*/
+h3 {
+    background-color: #df0000;
+    padding: 5px 10px;
+}
+
+/*0001*/
+body {
+    font: 400 15px "Georgia", serif;
+    line-height: 1.8;
+    color: #525252;
+    background-color: #e4e4e4;
+}
+
+img {
+    margin: 15px;
+}
+
+/*0003*/
+nav ul li {
+    background: #cc9292;
+    padding: 10px;
+    margin: 5px;
+    list-style-type: none;
+}
+
+/*0002*/
+ol li { 
+    list-style-type: upper-roman;
+    padding: 10px;
+}
+
+/*0001*/
+a {
+    color: #8f0000;
+}
+
+/*0011*/
+a:hover { color: rgb(34, 0, 0);}
+
+/*0001*/
+table, th, td {
+    border: 1px solid gray
+}
+
+/*0001*/
+table {
+    width: 100%;
+    margin: 5px;
+}
+
+/*0001*/
+th {
+    background-color: #fff2ec;
+    font-weight: bold;
+}
+
+/*0001*/
+td {
+    background-color: #ffc5c5;
+    text-align: center;
+}
