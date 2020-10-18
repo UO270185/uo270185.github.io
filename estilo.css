@@ -27,7 +27,7 @@ h3 {
 
 /*0001*/
 body {
-    font: 400 15px "Georgia", serif;
+    font: 400 16px "Georgia", serif;
     line-height: 1.8;
     color: #525252;
     background-color: #e4e4e4;
@@ -39,7 +39,7 @@ img {
 
 /*0003*/
 nav ul li {
-    background: #cc9292;
+    background: #ceaeae;
     padding: 10px;
     margin: 5px;
     list-style-type: none;
@@ -53,11 +53,11 @@ ol li {
 
 /*0001*/
 a {
-    color: #8f0000;
+    color: #500000;
 }
 
 /*0011*/
-a:hover { color: rgb(34, 0, 0);}
+a:hover { color: rgb(0, 0, 0);}
 
 /*0001*/
 table, th, td {
