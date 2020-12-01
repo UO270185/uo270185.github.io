@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora RPN</title>
+  <link rel="stylesheet" href="CalculadoraRPN.css"/>
+  <script src="CalculadoraRPN.js"></script>
+</head>
+
+<body>
+  <div class="total">
+  <h1> Calculadora RPN</h1> 
+
+  <div class="pila" id="pila"></div>
+
+  <div class="calc">
+  <table>
+    <tr>
+      <td colspan="4"><input type="text" id="screen" disabled/></td>
+    </tr>
+    <tr>
+      <td><button class="funcion" onClick="calculadora.cuadrado()">x^2</button></td>
+      <td><button class="funcion" onClick="calculadora.seno()">sin</button></td>
+      <td><button class="funcion" onClick="calculadora.coseno()">cos</button></td>
+      <td><button class="funcion" onClick="calculadora.tangente()">tan</button></td>
+    </tr>
+    <tr>
+      <td><button class="funcion" onClick="calculadora.raiz()">√</button></td>
+      <td><button class="funcion" onClick="calculadora.arcsin()">arcsin</button></td>
+      <td><button class="funcion" onClick="calculadora.arcos()">arcos</button></td>
+      <td><button class="funcion" onClick="calculadora.arctan()">arctan</button></td>
+    </tr>
+    <tr>
+      <td><button class="funcion" onClick="calculadora.logaritmo()">log</button></td>
+      <td><button class="funcion" onClick="calculadora.neperiano()">ln</button></td>
+      <td><button class="funcion" onClick="calculadora.exponente()">exp</button></td>
+      <td><button class="enter" onClick="calculadora.enter()">enter</button></td>
+    </tr>
+    <tr> 
+      <td><button onClick="calculadora.digitos(7)">7</button></td>
+      <td><button onClick="calculadora.digitos(8)">8</button></td>
+      <td><button onClick="calculadora.digitos(9)">9</button></td>
+      <td><button class="operation" onClick="calculadora.división()">/</button></td>
+    </tr>
+    <tr>
+      <td><button onClick="calculadora.digitos(4)">4</button></td>
+      <td><button onClick="calculadora.digitos(5)">5</button></td>
+      <td><button onClick="calculadora.digitos(6)">6</button></td>
+      <td><button class="operation" onClick="calculadora.multiplicación()">*</button></td>
+    </tr>
+    <tr>
+      <td><button onClick="calculadora.digitos(1)">1</button></td>
+      <td><button onClick="calculadora.digitos(2)">2</button></td>
+      <td><button onClick="calculadora.digitos(3)">3</button></td>
+      <td><button class="operation" onClick="calculadora.resta()">-</button></td>
+    </tr>
+    <tr>
+      <td><button onClick="calculadora.digitos(0)">0</button></td>
+      <td><button onClick="calculadora.punto()">.</button></td>
+      <td><button onClick="calculadora.borrar()">C</button></td>
+      <td><button class="operation" onClick="calculadora.suma()">+</button></td>
+    </tr>
+  </table>
+</div>
+
+<footer>
+<p></p>
+<a href="http://validator.w3.org/check/referer" hreflang="en-us"> <img src="images/HTML5.png" alt="¡HTML5  válido!" height="31" width="40" /></a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+  <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS válido!" /></a>
+</footer>
+</div>
+</body>
+</html>
