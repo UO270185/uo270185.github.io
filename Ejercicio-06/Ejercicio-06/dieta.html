@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora dietética</title>
+  <link rel="stylesheet" href="CalculadoraDietetica.css"/>
+  <script src="CalculadoraDietetica.js"></script>
+</head>
+<body>
+    <div class = "todo">
+        <h1>Calculadora dietética</h1>
+
+        <div class ="navegador">
+            <nav>
+                <ul>
+                    <li><a accesskey="I" tabindex="1" href="imc.html">Calculadora de IMC</a></li>
+                    <li><a accesskey="C" tabindex="2" href="dieta.html">Calcula las calorías de tu dieta</a></li>
+                    <li><a accesskey="D" tabindex="3" href="deporte.html">Calcula tu gasto energético</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            <div class="espec">
+                <h2>Calculadora de valor nutricional</h2>
+                <p>Calcula las calorías de tu dieta.</p>
+                <p>Introduce los cinco ingredientes principales de tu comida, especificando la cantidad consumida.</p>
+
+                <p>Selecciona el primer ingrediente: </p>
+                <select name="ingrediente1" id="ingrediente1">
+                    <option value="aceite">Aceite</option>
+                    <option value="ajo">Ajo</option>
+                    <option value="almejas">Almejas</option>
+                    <option value="almendras">Almendras</option>
+                    <option value="arroz">Arroz</option>
+                    <option value="atun">Atún</option>
+                    <option value="avellanas">Avellanas</option>
+                    <option value="azucar">Azúcar</option>
+                    <option value="bacalao">Bacalao</option>
+                    <option value="berenjena">Berenjena</option>
+                    <option value="cacao">Cacao</option>
+                    <option value="calabaza">Calabaza</option>
+                    <option value="calamares">Calamares</option>
+                    <option value="cerdo">Carne de cerdo</option>
+                    <option value="vaca">Carne de vaca</option>
+                    <option value="cerezas">Cerezas</option>
+                    <option value="cerveza">Cerveza</option>
+                    <option value="coco">Coco</option>
+                    <option value="coliflor">Coliflor</option>
+                    <option value="espinacas">Espinacas</option>
+                    <option value="fresas">Fresas</option>
+                    <option value="galletas">Galletas</option>
+                    <option value="gambas">Gambas</option>
+                    <option value="garbanzos">Garbanzos</option>
+                    <option value="harina">Harina de trigo</option>
+                    <option value="huevo">Huevo</option>
+                    <option value="judias">Judías</option>
+                    <option value="leche">Leche entera</option>
+                    <option value="lechuga">Lechuga</option>
+                    <option value="lentejas">Lentejas</option>
+                    <option value="limon">Limón</option>
+                    <option value="mandarina">Mandarina</option>
+                    <option value="mantequilla">Mantequilla</option>
+                    <option value="manzana">Manzana</option>
+                    <option value="melocoton">Melocotón</option>
+                    <option value="merluza">Merluza</option>
+                    <option value="mermelada">Mermelada</option>
+                    <option value="miel">Miel</option>
+                    <option value="naranja">Naranja</option>
+                    <option value="nueces">Nueces</option>
+                    <option value="pan">Pan</option>
+                    <option value="pasta">Pasta</option>
+                    <option value="patatas">Patatas</option>
+                    <option value="pepino">Pepino</option>
+                    <option value="pera">Pera</option>
+                    <option value="pimiento">Pimiento</option>
+                    <option value="platano">Plátano</option>
+                    <option value="pollo">Pollo</option>
+                    <option value="puerro">Puerro</option>
+                    <option value="queso">Queso</option>
+                    <option value="repollo">Repollo</option>
+                    <option value="sardinas">Sardinas</option>
+                    <option value="sidra">Sidra</option>
+                    <option value="tomate">Tomate</option>
+                    <option value="uvas">Uvas</option>
+                    <option value="vino">Vino</option>
+                    <option value="zanahoria">Zanahoria</option>
+                </select>
+
+                <p>Introduce la cantidad consumida (gr): </p>
+                <input id="cantidad1" type="number">
+
+                <p>Selecciona el segundo ingrediente: </p>
+                <select name="ingrediente2" id="ingrediente2">
+                    <option value="aceite">Aceite</option>
+                    <option value="ajo">Ajo</option>
+                    <option value="almejas">Almejas</option>
+                    <option value="almendras">Almendras</option>
+                    <option value="arroz">Arroz</option>
+                    <option value="atun">Atún</option>
+                    <option value="avellanas">Avellanas</option>
+                    <option value="azucar">Azúcar</option>
+                    <option value="bacalao">Bacalao</option>
+                    <option value="berenjena">Berenjena</option>
+                    <option value="cacao">Cacao</option>
+                    <option value="calabaza">Calabaza</option>
+                    <option value="calamares">Calamares</option>
+                    <option value="cerdo">Carne de cerdo</option>
+                    <option value="vaca">Carne de vaca</option>
+                    <option value="cerezas">Cerezas</option>
+                    <option value="cerveza">Cerveza</option>
+                    <option value="coco">Coco</option>
+                    <option value="coliflor">Coliflor</option>
+                    <option value="espinacas">Espinacas</option>
+                    <option value="fresas">Fresas</option>
+                    <option value="galletas">Galletas</option>
+                    <option value="gambas">Gambas</option>
+                    <option value="garbanzos">Garbanzos</option>
+                    <option value="harina">Harina de trigo</option>
+                    <option value="huevo">Huevo</option>
+                    <option value="judias">Judías</option>
+                    <option value="leche">Leche entera</option>
+                    <option value="lechuga">Lechuga</option>
+                    <option value="lentejas">Lentejas</option>
+                    <option value="limon">Limón</option>
+                    <option value="mandarina">Mandarina</option>
+                    <option value="mantequilla">Mantequilla</option>
+                    <option value="manzana">Manzana</option>
+                    <option value="melocoton">Melocotón</option>
+                    <option value="merluza">Merluza</option>
+                    <option value="mermelada">Mermelada</option>
+                    <option value="miel">Miel</option>
+                    <option value="naranja">Naranja</option>
+                    <option value="nueces">Nueces</option>
+                    <option value="pan">Pan</option>
+                    <option value="pasta">Pasta</option>
+                    <option value="patatas">Patatas</option>
+                    <option value="pepino">Pepino</option>
+                    <option value="pera">Pera</option>
+                    <option value="pimiento">Pimiento</option>
+                    <option value="platano">Plátano</option>
+                    <option value="pollo">Pollo</option>
+                    <option value="puerro">Puerro</option>
+                    <option value="queso">Queso</option>
+                    <option value="repollo">Repollo</option>
+                    <option value="sardinas">Sardinas</option>
+                    <option value="sidra">Sidra</option>
+                    <option value="tomate">Tomate</option>
+                    <option value="uvas">Uvas</option>
+                    <option value="vino">Vino</option>
+                    <option value="zanahoria">Zanahoria</option>
+                </select>
+
+                    <p>Introduce la cantidad consumida (gr): </p>
+                    <input id="cantidad2" type="number">
+
+                <p>Selecciona el tercer ingrediente: </p>
+                <select name="ingrediente3" id="ingrediente3">
+                    <option value="aceite">Aceite</option>
+                    <option value="ajo">Ajo</option>
+                    <option value="almejas">Almejas</option>
+                    <option value="almendras">Almendras</option>
+                    <option value="arroz">Arroz</option>
+                    <option value="atun">Atún</option>
+                    <option value="avellanas">Avellanas</option>
+                    <option value="azucar">Azúcar</option>
+                    <option value="bacalao">Bacalao</option>
+                    <option value="berenjena">Berenjena</option>
+                    <option value="cacao">Cacao</option>
+                    <option value="calabaza">Calabaza</option>
+                    <option value="calamares">Calamares</option>
+                    <option value="cerdo">Carne de cerdo</option>
+                    <option value="vaca">Carne de vaca</option>
+                    <option value="cerezas">Cerezas</option>
+                    <option value="cerveza">Cerveza</option>
+                    <option value="coco">Coco</option>
+                    <option value="coliflor">Coliflor</option>
+                    <option value="espinacas">Espinacas</option>
+                    <option value="fresas">Fresas</option>
+                    <option value="galletas">Galletas</option>
+                    <option value="gambas">Gambas</option>
+                    <option value="garbanzos">Garbanzos</option>
+                    <option value="harina">Harina de trigo</option>
+                    <option value="huevo">Huevo</option>
+                    <option value="judias">Judías</option>
+                    <option value="leche">Leche entera</option>
+                    <option value="lechuga">Lechuga</option>
+                    <option value="lentejas">Lentejas</option>
+                    <option value="limon">Limón</option>
+                    <option value="mandarina">Mandarina</option>
+                    <option value="mantequilla">Mantequilla</option>
+                    <option value="manzana">Manzana</option>
+                    <option value="melocoton">Melocotón</option>
+                    <option value="merluza">Merluza</option>
+                    <option value="mermelada">Mermelada</option>
+                    <option value="miel">Miel</option>
+                    <option value="naranja">Naranja</option>
+                    <option value="nueces">Nueces</option>
+                    <option value="pan">Pan</option>
+                    <option value="pasta">Pasta</option>
+                    <option value="patatas">Patatas</option>
+                    <option value="pepino">Pepino</option>
+                    <option value="pera">Pera</option>
+                    <option value="pimiento">Pimiento</option>
+                    <option value="platano">Plátano</option>
+                    <option value="pollo">Pollo</option>
+                    <option value="puerro">Puerro</option>
+                    <option value="queso">Queso</option>
+                    <option value="repollo">Repollo</option>
+                    <option value="sardinas">Sardinas</option>
+                    <option value="sidra">Sidra</option>
+                    <option value="tomate">Tomate</option>
+                    <option value="uvas">Uvas</option>
+                    <option value="vino">Vino</option>
+                    <option value="zanahoria">Zanahoria</option>
+                </select>
+                
+                <p>Introduce la cantidad consumida (gr): </p>
+                <input id="cantidad3" type="number">
+
+                <p>Selecciona el cuarto ingrediente: </p>
+                <select name="ingrediente4" id="ingrediente4">
+                        <option value="aceite">Aceite</option>
+                        <option value="ajo">Ajo</option>
+                        <option value="almejas">Almejas</option>
+                        <option value="almendras">Almendras</option>
+                        <option value="arroz">Arroz</option>
+                        <option value="atun">Atún</option>
+                        <option value="avellanas">Avellanas</option>
+                        <option value="azucar">Azúcar</option>
+                        <option value="bacalao">Bacalao</option>
+                        <option value="berenjena">Berenjena</option>
+                        <option value="cacao">Cacao</option>
+                        <option value="calabaza">Calabaza</option>
+                        <option value="calamares">Calamares</option>
+                        <option value="cerdo">Carne de cerdo</option>
+                        <option value="vaca">Carne de vaca</option>
+                        <option value="cerezas">Cerezas</option>
+                        <option value="cerveza">Cerveza</option>
+                        <option value="coco">Coco</option>
+                        <option value="coliflor">Coliflor</option>
+                        <option value="espinacas">Espinacas</option>
+                        <option value="fresas">Fresas</option>
+                        <option value="galletas">Galletas</option>
+                        <option value="gambas">Gambas</option>
+                        <option value="garbanzos">Garbanzos</option>
+                        <option value="harina">Harina de trigo</option>
+                        <option value="huevo">Huevo</option>
+                        <option value="judias">Judías</option>
+                        <option value="leche">Leche entera</option>
+                        <option value="lechuga">Lechuga</option>
+                        <option value="lentejas">Lentejas</option>
+                        <option value="limon">Limón</option>
+                        <option value="mandarina">Mandarina</option>
+                        <option value="mantequilla">Mantequilla</option>
+                        <option value="manzana">Manzana</option>
+                        <option value="melocoton">Melocotón</option>
+                        <option value="merluza">Merluza</option>
+                        <option value="mermelada">Mermelada</option>
+                        <option value="miel">Miel</option>
+                        <option value="naranja">Naranja</option>
+                        <option value="nueces">Nueces</option>
+                        <option value="pan">Pan</option>
+                        <option value="pasta">Pasta</option>
+                        <option value="patatas">Patatas</option>
+                        <option value="pepino">Pepino</option>
+                        <option value="pera">Pera</option>
+                        <option value="pimiento">Pimiento</option>
+                        <option value="platano">Plátano</option>
+                        <option value="pollo">Pollo</option>
+                        <option value="puerro">Puerro</option>
+                        <option value="queso">Queso</option>
+                        <option value="repollo">Repollo</option>
+                        <option value="sardinas">Sardinas</option>
+                        <option value="sidra">Sidra</option>
+                        <option value="tomate">Tomate</option>
+                        <option value="uvas">Uvas</option>
+                        <option value="vino">Vino</option>
+                        <option value="zanahoria">Zanahoria</option>
+                    </select>
+                    
+                    <p>Introduce la cantidad consumida (gr): </p>
+                    <input id="cantidad4" type="number">
+
+                    <p>Selecciona el quinto ingrediente: </p>
+                    <select name="ingrediente5" id="ingrediente5">
+                        <option value="aceite">Aceite</option>
+                        <option value="ajo">Ajo</option>
+                        <option value="almejas">Almejas</option>
+                        <option value="almendras">Almendras</option>
+                        <option value="arroz">Arroz</option>
+                        <option value="atun">Atún</option>
+                        <option value="avellanas">Avellanas</option>
+                        <option value="azucar">Azúcar</option>
+                        <option value="bacalao">Bacalao</option>
+                        <option value="berenjena">Berenjena</option>
+                        <option value="cacao">Cacao</option>
+                        <option value="calabaza">Calabaza</option>
+                        <option value="calamares">Calamares</option>
+                        <option value="cerdo">Carne de cerdo</option>
+                        <option value="vaca">Carne de vaca</option>
+                        <option value="cerezas">Cerezas</option>
+                        <option value="cerveza">Cerveza</option>
+                        <option value="coco">Coco</option>
+                        <option value="coliflor">Coliflor</option>
+                        <option value="espinacas">Espinacas</option>
+                        <option value="fresas">Fresas</option>
+                        <option value="galletas">Galletas</option>
+                        <option value="gambas">Gambas</option>
+                        <option value="garbanzos">Garbanzos</option>
+                        <option value="harina">Harina de trigo</option>
+                        <option value="huevo">Huevo</option>
+                        <option value="judias">Judías</option>
+                        <option value="leche">Leche entera</option>
+                        <option value="lechuga">Lechuga</option>
+                        <option value="lentejas">Lentejas</option>
+                        <option value="limon">Limón</option>
+                        <option value="mandarina">Mandarina</option>
+                        <option value="mantequilla">Mantequilla</option>
+                        <option value="manzana">Manzana</option>
+                        <option value="melocoton">Melocotón</option>
+                        <option value="merluza">Merluza</option>
+                        <option value="mermelada">Mermelada</option>
+                        <option value="miel">Miel</option>
+                        <option value="naranja">Naranja</option>
+                        <option value="nueces">Nueces</option>
+                        <option value="pan">Pan</option>
+                        <option value="pasta">Pasta</option>
+                        <option value="patatas">Patatas</option>
+                        <option value="pepino">Pepino</option>
+                        <option value="pera">Pera</option>
+                        <option value="pimiento">Pimiento</option>
+                        <option value="platano">Plátano</option>
+                        <option value="pollo">Pollo</option>
+                        <option value="puerro">Puerro</option>
+                        <option value="queso">Queso</option>
+                        <option value="repollo">Repollo</option>
+                        <option value="sardinas">Sardinas</option>
+                        <option value="sidra">Sidra</option>
+                        <option value="tomate">Tomate</option>
+                        <option value="uvas">Uvas</option>
+                        <option value="vino">Vino</option>
+                        <option value="zanahoria">Zanahoria</option>
+                    </select>
+                    
+                        <p>Introduce la cantidad consumida (gr): </p>
+                        <input id="cantidad5" type="number">
+
+                    <p></p>
+
+                <button type="button" onClick="calculadora.calcularDieta()">Calcular</button>
+                <p id="resultado"></p>
+            </div>
+        </main> 
+        <footer>
+            <a href="http://validator.w3.org/check/referer" hreflang="en-us"> 
+                <img src="images/HTML5.png" alt="¡HTML5 válido!" height="31" width="40" /></a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS válido!" /></a>
+        </footer>
+    </div>
+</body>
+</html>

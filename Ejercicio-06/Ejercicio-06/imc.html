@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora dietética</title>
+  <link rel="stylesheet" href="CalculadoraDietetica.css"/>
+  <script src="CalculadoraDietetica.js"></script>
+</head>
+<body>
+    <div class = "todo">
+        <h1>Calculadora dietética</h1>
+
+        <div class ="navegador">
+            <nav>
+                <ul>
+                    <li><a accesskey="I" tabindex="1" href="imc.html">Calculadora de IMC</a></li>
+                    <li><a accesskey="C" tabindex="2" href="dieta.html">Calcula las calorías de tu dieta</a></li>
+                    <li><a accesskey="D" tabindex="3" href="deporte.html">Calcula tu gasto energético</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            <div class="espec">
+                <h2>Calculadora de IMC</h2>
+                <p>Calcula tu índice de masa corporal.</p>
+
+                <p>Introduce tu peso (en kg): </p>
+                <label for="peso">Peso:<input id="peso" type ="number"/></label>
+                <p>Introduce tu altura (en m): </p>
+                <label for="talla">Altura:<input id="talla" type="number"/></label>
+                <p></p>
+                <button type="button" onClick="calculadora.calcularIMC()">Calcula tu IMC</button>
+                <p id="resultado"></p>
+                <p id="aclaracion"></p>
+            </div>
+        </main> 
+        <footer>
+            <a href="http://validator.w3.org/check/referer" hreflang="en-us"> 
+                <img src="images/HTML5.png" alt="¡HTML5  válido!" height="31" width="40" /></a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS válido!" /></a>
+        </footer>
+    </div>
+</body>
+</html>

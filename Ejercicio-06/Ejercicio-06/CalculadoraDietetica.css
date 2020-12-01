@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+    color: rgb(255, 81, 0);
+}
+
+h2 {
+    color: rgb(255, 81, 0);
+}
+
+ul {
+    display: table;
+    margin: 0 auto;
+    background-color: rgb(168, 216, 255);
+    padding: 5%;
+    border-style: dotted;
+}
+
+ul li {
+    display: flex;
+    font-size: 120%;
+}
+
+button {
+    background-color: rgb(182, 43, 43);
+    color: white;
+}
+
+.todo {
+    background-color: rgb(239, 247, 255);
+    text-align: center;
+}
+
+.espec {
+    align-content: center;
+}
