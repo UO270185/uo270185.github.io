@@ -27,7 +27,7 @@
                 <p>Calcula las calorías que gastas durante tu actividad física.</p>
 
                 <p>Elige la actividad realizada: </p>
-                <select name="deporte" id="deporte">
+                <label for="deporte">Actuvidad:<select name="deporte" id="deporte">
                     <option value="bailar">Bailar</option>
                     <option value="baloncesto">Baloncesto</option>
                     <option value="comer">Comer</option>
@@ -46,10 +46,10 @@
                     <option value="escaleras">Subir escaleras</option>
                     <option value="tenis">Tenis</option>
                     <option value="volley">Volleyball</option>   
-                </select>
+                </select></label>
 
                 <p>Introduce la duración de la actividad (en minutos): </p>
-                <input id="duracion" type="number">
+                <label for="duracion">Duración:<input id="duracion" type="number"></label>
                 <p></p>
                 <button type="button" onClick="calculadora.calcularEnergia()">Calcular</button>
                 <p id="resultado"></p>
