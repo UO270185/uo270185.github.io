@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora dietética</title>
+  <link rel="stylesheet" href="CalculadoraDietetica.css"/>
+  <script src="CalculadoraDietetica.js"></script>
+</head>
+<body>
+    <div class = "todo">
+        <h1>Calculadora dietética</h1>
+
+        <div class ="navegador">
+            <nav>
+                <ul>
+                    <li><a accesskey="I" tabindex="1" href="imc.html">Calculadora de IMC</a></li>
+                    <li><a accesskey="C" tabindex="2" href="dieta.html">Calcula las calorías de tu dieta</a></li>
+                    <li><a accesskey="D" tabindex="3" href="deporte.html">Calcula tu gasto energético</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            <div class="espec">
+                <h2>Calculadora de gasto energético</h2>
+                <p>Calcula las calorías que gastas durante tu actividad física.</p>
+
+                <p>Elige la actividad realizada: </p>
+                <select name="deporte" id="deporte">
+                    <option value="bailar">Bailar</option>
+                    <option value="baloncesto">Baloncesto</option>
+                    <option value="comer">Comer</option>
+                    <option value="conducir">Conducir</option>
+                    <option value="correr">Correr</option>
+                    <option value="dormir">Dormir</option>
+                    <option value="esquiar">Esquiar</option>
+                    <option value="futbol">Fútbol</option>
+                    <option value="golf">Golf</option>
+                    <option value="montañismo">Montañismo</option>
+                    <option value="caballo">Montar a caballo</option>
+                    <option value="nadar">Nadar</option>
+                    <option value="pasear">Pasear</option>
+                    <option value="pingpong">Ping pong</option>
+                    <option value="remar">Remar</option>
+                    <option value="escaleras">Subir escaleras</option>
+                    <option value="tenis">Tenis</option>
+                    <option value="volley">Volleyball</option>   
+                </select>
+
+                <p>Introduce la duración de la actividad (en minutos): </p>
+                <input id="duracion" type="number">
+                <p></p>
+                <button type="button" onClick="calculadora.calcularEnergia()">Calcular</button>
+                <p id="resultado"></p>
+            </div>
+        </main> 
+        <footer>
+            <a href="http://validator.w3.org/check/referer" hreflang="en-us"> 
+                <img src="images/HTML5.png" alt="¡HTML5  válido!" height="31" width="40" /></a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS válido!" /></a>
+        </footer>
+    </div>
+</body>
+</html>
