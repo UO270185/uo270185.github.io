@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+}
+
+.calc {
+    display: flex;
+    align-items: center;
+}
+
+table {
+    background-color: rgb(180, 180, 180);
+    width: 50%;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+button {
+    width: 100%;
+    font-size: 150%;
+    background-color: rgb(123, 123, 255);
+    text-align: center;
+    color: white;
+}
+
+.m {
+    background-color: rgb(102, 102, 102);
+}
+
+.operation {
+    background-color: rgb(253, 141, 37);
+    color: rgb(54, 54, 54);
+}
+
+input {
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-size: 150%;
+}
