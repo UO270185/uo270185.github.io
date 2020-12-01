@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.uniovi.es/">
+<Document>
+<Placemark>
+<name>Asturias-Madrid</name>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+43.5636111, -6.034722222222222
+42.58908714888295, -5.5683164751651475
+40.9480556, -4.118333333333333
+40.4722222, -3.560833333333333
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</LineString>
+<Style> id ='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Barcelona-Venecia</name>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+41.2969444, 2.0783333333333336
+39.2138889, 9.136388888888888
+45.5052778, 12.351944444444444
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</LineString>
+<Style> id ='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+<Placemark>
+<name>Madrid-Tokio</name>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+40.4722222, -3.560833333333333
+41.8930556, 12.482777777777779
+41.02949237154414, 29.111780918061072
+39.63084566403822, 116.77918995987955
+37.47333022181783, 126.93484117945866
+35.765, 140.38833333333332
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</LineString>
+<Style> id ='lineaRoja'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>

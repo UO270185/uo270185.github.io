@@ -1,0 +1,59 @@
+h1 {
+    color: rgb(155, 10, 155);
+    background-color: thistle;
+}
+
+h2 {
+    color: rgb(155, 10, 155);
+    background-color: aliceblue;
+}
+
+h3 {
+    color: rgb(155, 10, 155);
+    background-color: aliceblue;
+}
+
+h4 {
+    color: rgb(155, 10, 155);
+}
+
+h5 {
+    color: rgb(155, 10, 155);
+    background-color: thistle;
+}
+
+h6 {
+    color: rgb(155, 10, 155);
+}
+
+table {
+    background-color: rgb(181, 218, 253);
+    border-style: dashed;
+    border-color: rgb(113, 0, 128);
+}
+
+td {
+    border-style: solid;
+    border-color: rgb(113, 0, 128);
+    background-color: plum;
+}
+
+ul {
+    list-style-type: square;
+    font-style: oblique;
+    color: rgb(87, 81, 87);
+}
+
+button {
+    background-color: rgb(155, 10, 155);
+}
+
+footer {
+    padding: 5%;
+}
+
+#mapa {
+       height: 600px;
+       width: 1000px;
+       overflow: hidden;
+       }
