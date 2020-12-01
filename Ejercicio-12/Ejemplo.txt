@@ -1,0 +1,2 @@
+Esto es un ejemplo para el ejercicio 12.
+Esta es la práctica 3 de SEW sobre computación en el cliente.

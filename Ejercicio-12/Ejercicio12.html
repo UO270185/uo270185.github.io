@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 12</title>
+  <link rel="stylesheet" href="Ejercicio12.css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="Ejercicio12.js"></script>
+</head>
+<body>
+    <div class = "todo">
+        
+        <h1>Visualizador de propiedades de archivos</h1>
+
+        <p>Selecciona un archivo de texto: </p>
+
+        <input type="file" id="archivo" onChange="filereader.leerArchivo(this.files);">
+
+        <p id="nombre"></p>
+        <p id="tamaño"></p>
+        <p id="tipo"></p>
+        <p id="fechaModificado"></p>
+        <p id ="contenido"></p>
+        <span id="inside"></span>
+        <p id="error"></p>
+
+        <footer>
+            <a href="http://validator.w3.org/check/referer" hreflang="en-us"> 
+                <img src="images/HTML5.png" alt="¡HTML5  válido!" height="31" width="40" /></a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS válido!" /></a>
+        </footer>
+    </div>
+</body>
+</html>
