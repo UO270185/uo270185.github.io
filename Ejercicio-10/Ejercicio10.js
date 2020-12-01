@@ -10,6 +10,8 @@ class NewsGetter {
         var url = "https://newsapi.org/v2/everything?q=${topic}&apiKey=${apikey}";
 
         fetch(url).then(a => a.json()).then(data => {
+		let ul = document.createElement('ul');
+		document.getElementById('news').appendChild(ul);
         for (var i=0; i< data.articles.length; i++){
             let li = document.createElement('li');
             let a = document.createElement('a');
@@ -17,7 +19,7 @@ class NewsGetter {
             a.setAttribute('target', '_blank');
             a.textContent = articles[i].title;
             li.appendChild(a);
-            document.getElementById("news").appendChild(li);
+			ul.appendChild(li);
         }
         });
     }
