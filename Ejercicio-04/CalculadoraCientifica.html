@@ -2,24 +2,28 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Calculadora Científica</title>
   <link rel="stylesheet" href="CalculadoraCientifica.css"/>
   <script src="CalculadoraCientifica.js"></script>
 </head>
 
 <body>
+	<div id="todo">
   <h1> Calculadora Científica</h1> 
 
   <div class="calc">
   <table>
+	<tr>
+		<th colspan="4">Calculadora</th>
+	</tr>
     <tr>
-      <td colspan="4"><input type="text" id="screen" disabled/></td>
+      <td colspan="4"><label for="screen">Resultado:<input type="text" id="screen" readonly/</label></td>
     </tr>
     <tr>
-      <td><button class="m" onClick="calculadora.mrc()">mrc</button></td>
+      <td colspan="2"><button class="m" onClick="calculadora.mrc()">mrc</button></td>
       <td><button class="m" onClick="calculadora.mMas()">m+</button></td>
       <td><button class="m" onClick="calculadora.mMenos()">m-</button></td>
-      <td><button class="useless" disabled></button></td>
     </tr>
     <tr>
       <td><button class="funcion" onClick="calculadora.cuadrado()">x^2</button></td>
@@ -34,10 +38,9 @@
       <td><button class="funcion" onClick="calculadora.arctan()">arctan</button></td>
     </tr>
     <tr>
-      <td><button class="funcion" onClick="calculadora.logaritmo()">log</button></td>
+      <td colspan="2"><button class="funcion" onClick="calculadora.logaritmo()">log</button></td>
       <td><button class="funcion" onClick="calculadora.neperiano()">ln</button></td>
       <td><button class="funcion" onClick="calculadora.exponente()">exp</button></td>
-      <td><button class="useless" disabled></button></td>
     </tr>
     <tr>
       <td><button onClick="calculadora.pi()">π</button></td>
@@ -78,5 +81,6 @@
 <a href="http://jigsaw.w3.org/css-validator/check/referer">
   <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS válido!" /></a>
 </footer>
+</div>
 </body>
 </html>
