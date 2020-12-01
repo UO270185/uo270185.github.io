@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 14</title>
+  <link rel="stylesheet" href="Ejercicio14.css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="Ejercicio14.js"></script>
+</head> 
+  <body>
+        <h1>Private Detective!</h1>
+
+        <h2>Búsqueda de ciudades</h2>
+
+        <p>Selecciona la ciudad que quieras encontrar.</p>
+
+        <button onClick="map.initialize(43.3672702,-5.8502461)">Oviedo</button> 
+        <button onCLick="map.initialize(43.53573, -5.66152)">Gijón</button>
+        <button onClick="map.initialize(40.41831, -3.70275)">Madrid</button>
+        <button onClick="map.initialize(43.257, -2.92344)">Bilbao</button>
+        <button onClick="map.initialize(42.60003, -5.57032)">León</button>
+
+        <p></p>
+
+        <h2>Información sobre tus archivos</h2>
+
+        <p>Elige los archivos de los que quieres obtener información.</p>
+        <p>Para poder visualizar su contenido deben ser archivos en formato texto.</p>
+
+        <input type="file" id="archivo" onChange="filereader.leerArchivo(this.files);">
+
+        <p id="nombre"></p>
+        <p id="tamaño"></p>
+        <p id="tipo"></p>
+        <p id="fechaModificado"></p>
+        <p id ="contenido"></p>
+        <span id="inside"></span>
+        <p id="error"></p>
+
+          <div id="mapa"></div>
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=mapaDinamicoGoogle.initMap"></script>
+
+          <div id="fullscreen" class="html5-fullscreen-api">
+            <img alt="detective" src="images/misterio.jpg">
+            <button id= "fullscreenButton" onClick="fullscreen.makeFull()">Pantalla completa</button> 
+        </div> 
+
+        <footer>
+            <a href="http://validator.w3.org/check/referer" hreflang="en-us"> 
+                <img src="images/HTML5.png" alt="¡HTML5  válido!" height="31" width="40" /></a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS válido!" /></a>
+        </footer>
+  </body>
+</html>
